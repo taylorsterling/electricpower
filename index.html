@@ -5,7 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EPI</title>
-    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+
+    <!-- Linking in JS and JQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
     <!-- Compressed CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css"
@@ -17,7 +19,7 @@
         crossorigin="anonymous"></script>
 
     <!-- Linking in JavaScript -->
-    <script src="assets/javascript/index.js"></script>
+    <script src="./assets/javascript/index.js"></script>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Parisienne|Playfair+Display|Prata|Poppins|Permanent+Marker|Rochester|Raleway|Shadows+Into+Light"
@@ -29,23 +31,30 @@
 
 <body>
 
-    <nav class="top-bar topbar-responsive">
-        <div class="top-bar-title">
-            <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
-                <button class="menu-icon" type="button" data-toggle></button>
-            </span>
-            <a class="topbar-responsive-logo" href="#"><strong>EPI</strong> <img alt="bolt" id="bolt" src="./assets/media/bolt.svg"></a>
+
+    <div data-sticky-container>
+        <div data-sticky data-options="marginTop:0;">
+
+            <nav class="top-bar topbar-responsive">
+                <div class="top-bar-title">
+                    <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+                        <button class="menu-icon" type="button" data-toggle></button>
+                    </span>
+                    <a class="topbar-responsive-logo" href="#"><strong>EPI</strong> <img alt="bolt" id="bolt" src="./assets/media/bolt.svg"></a>
+                </div>
+                <div id="topbar-responsive" class="topbar-responsive-links">
+                    <div class="top-bar-right">
+                        <ul class="menu simple vertical medium-horizontal">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
         </div>
-        <div id="topbar-responsive" class="topbar-responsive-links">
-            <div class="top-bar-right">
-                <ul class="menu simple vertical medium-horizontal">
-                    <li><a href="#" class="link1">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    </div>
 
 
     <div class="row expanded collapse">
@@ -55,48 +64,41 @@
     </div>
 
 
-    <div class="callout large">
-        <div class="row column text-center">
-
-            <div class="medium-6 columns medium-push-6">
-                <img class="thumbnail" src="./assets/media/wires.jpg">
-            </div>
-            <div class="medium-6 columns medium-pull-6 intro">
+    <div class="grid-x">
+        <div class="cell large-6">
+            <div class="callout large intro">
                 <h2>Electric Power Industry</h2>
-                <p id="introtext">The electric power industry covers the generation, transmission,
-                    distribution and sale of electric power to the general public and industry. The commercial
-                    distribution of electric power started in 1882 when electricity was produced for electric lighting.
-                    In the 1880s and 1890s, growing economic and safety concerns lead to the regulation of the
-                    industry. What was once an expensive novelty limited to the most densely populated areas, reliable
-                    and economical electric power has become an essential aspect for normal operation of all elements
-                    of developed economies.</p>
-                <a href="https://en.wikipedia.org/wiki/Electric_power_industry" target="_blank" id="wikilink" class="button large">Learn
-                    More</a>
+                <p id="introtext">Although electricity had been known to be produced as a result of the chemical
+                    reactions that take
+                    place in an electrolytic cell since Alessandro Volta developed the voltaic pile in 1800, its
+                    production by this means was, and still is, expensive. In 1831, Michael Faraday devised a
+                    machine
+                    that generated electricity from rotary motion, but it took almost 50 years for the technology
+                    to
+                    reach a commercially viable stage. In 1878, in the United States, Thomas Edison developed and
+                    sold
+                    a commercially viable replacement for gas lighting and heating using locally generated and
+                    distributed direct current electricity.
+
+                    The world's first public electricity supply was provided in late 1881, when the streets of the
+                    Surrey town of Godalming in the UK were lit with electric light. This system was powered from a
+                    water wheel on the River Wey, which drove a Siemens alternator that supplied a number of arc
+                    lamps
+                    within the town. This supply scheme also provided electricity to a number of shops and premises
+                    to
+                    light 34 incandescent Swan light bulbs.</p>
+            </div>
+        </div>
+        <div class="cell large-6">
+            <div class="callout large">
+                <img src="./assets/media/wires.jpg">
             </div>
         </div>
     </div>
-    <div class="row">
-        <h1>History</h1>
-        <p class="lead">Although electricity had been known to be produced as a result of the chemical reactions that
-            take place in an electrolytic cell since Alessandro Volta developed the voltaic pile in 1800, its
-            production by this means was, and still is, expensive. In 1831, Michael Faraday devised a machine that
-            generated electricity from rotary motion, but it took almost 50 years for the technology to reach a
-            commercially viable stage. In 1878, in the United States, Thomas Edison developed and sold a commercially
-            viable replacement for gas lighting and heating using locally generated and distributed direct current
-            electricity.
 
-            The world's first public electricity supply was provided in late 1881, when the streets of the Surrey town
-            of Godalming in the UK were lit with electric light. This system was powered from a water wheel on the
-            River Wey, which drove a Siemens alternator that supplied a number of arc lamps within the town. This
-            supply scheme also provided electricity to a number of shops and premises to light 34 incandescent Swan
-            light bulbs.</p>
-        <a href="#" class="button large">Learn More</a>
-        <a href="#" class="button large hollow">Learn Less</a>
-    </div>
 
-    <!-- Linking in JS and JQuery -->
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+
+
 
 </body>
 

@@ -2,37 +2,62 @@ body {
     background-image: url("../media/aluminum.png");
 }
 
-.top-bar, .topbar-responsive {
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
 
-  .top-bar, .top-bar ul {
-      background-color: lightgray!important;
 
-  }
-
-  .topbar-responsive .menu a {
-      color: black!important;
-      
-  }
-  
-.link1 {
-    margin-left: 4rem;
+.callout, .large {
+    background-color: transparent;
+    border: none;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
-  .topbar-responsive .topbar-responsive-logo {
-    color: black;
-    vertical-align: middle;
-    font-size: 1.5rem;
-    margin-right: 12rem;
-  }
 
-  #bolt {
-      width: 2rem;
+.intro {
+    background: rgba(136, 136, 136, 0.3);
+}
+
+h2 {
+    font-family: permanent marker;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+#introtext {
+    text-align: left;
+    font-family: poppins;
+}
+
+#bolt {
+    width: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topbar-responsive {
+    background: #2c3840;
+    padding: 1rem 1.5rem;
+  }
+  
+  .topbar-responsive .topbar-responsive-logo {
+    color: #fefefe;
+    vertical-align: middle;
+  }
+  
+  .topbar-responsive .menu {
+    background: #2c3840;
   }
   
   .topbar-responsive .menu li:last-of-type {
@@ -46,21 +71,6 @@ body {
   
   .topbar-responsive .menu a:hover {
     color: #c6d1d8;
-  }
-
-
-  .menu-icon{
-    display:none; 
-  }
-
-
-  @media only screen and (max-width: 767px) {
-    .menu-icon{
-      display:none;  
-    }
-    .menu-icon{
-      display:block; 
-    }
   }
   
   @media screen and (max-width: 39.9375em) {
@@ -80,7 +90,6 @@ body {
     color: #c6d1d8;
     border-color: #c6d1d8;
   }
-
   
   @media screen and (max-width: 39.9375em) {
     .topbar-responsive .menu .topbar-responsive-button {
@@ -166,31 +175,32 @@ body {
   }
 
 
-.callout, .large {
-    background-color: transparent;
-}
 
-#wikilink {
-    border-width: 1px;
-    border-color: black;
-    color: black;
-}
 
-#wikilink:hover {
-    background-color: yellow;
-}
 
-.intro {
-    background: rgba(136, 136, 136, 0.3);
-    animation: rain .3s linear infinite;
-}
 
-h2 {
-    font-family: permanent marker;
-    font-size: 2.4rem;
-}
 
-#introtext {
-    text-align: left;
-    font-family: poppins;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
