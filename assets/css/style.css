@@ -3,7 +3,7 @@
 }
 
 #introsection {
-    background-color: rgb(233, 233, 83);
+    background-color: rgb(238, 238, 145);
 }
 
 .card {
@@ -29,9 +29,15 @@
 }
 
 h2 {
-    font-family: permanent marker;
+    font-family: raleway;
     font-size: 2.4rem;
+    font-weight: 500;
     text-align: center;
+}
+
+h3 {
+    font-family: raleway;
+    font-weight: 400;
 }
 
 #introtext {
@@ -51,7 +57,7 @@ h2 {
 
 
 #concludesection {
-    background-color: rgb(233, 233, 83);
+    background-color: rgb(238, 238, 145);
 }
 
 
@@ -61,7 +67,7 @@ h2 {
     padding-right: 1.5rem;
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    border-bottom-color: rgb(233, 233, 83);
+    border-bottom-color: rgb(238, 238, 145);
   }
   
   .topbar-responsive .topbar-responsive-logo {

@@ -18,6 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js" integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg= sha384-9ksAFjQjZnpqt6VtpjMjlp2S0qrGbcwF/rvrLUg2vciMhwc1UJJeAAOLuJ96w+Nj sha512-UMSn6RHqqJeJcIfV1eS2tPKCjzaHkU/KqgAnQ7Nzn0mLicFxaVhm9vq7zG5+0LALt15j1ljlg8Fp9PT1VGNmDw=="
         crossorigin="anonymous"></script>
 
+
     <!-- Linking in JavaScript -->
     <script src="./assets/javascript/index.js"></script>
 
@@ -106,22 +107,18 @@
         <div class="grid-container fluid">
             <div class="grid-x">
                 <div class="cell large-6">
-                    <div class="callout large intro">
-                        <h2>Electric Power Industry</h2>
-                        <p id="introtext">The electric power industry covers the generation, transmission, distribution
-                            and sale of electric power to the general public and industry. The commercial distribution
-                            of electric power started in 1882 when electricity was produced for electric lighting. In
-                            the 1880s and 1890s, growing economic and safety concerns lead to the regulation of the
-                            industry. What was once an expensive novelty limited to the most densely populated areas,
-                            reliable and economical electric power has become an essential aspect for normal operation
-                            of all elements of developed economies.
 
-                            By the middle of the 20th century, electricity was seen as a "natural monopoly", only
-                            efficient if a restricted number of organizations participated in the market; in some
-                            areas, vertically-integrated companies provide all stages from generation to retail, and
-                            only governmental supervision regulated the rate of return and cost structure.
-                        </p>
+                    <p><button id="modalTrigger" data-open="exampleModal">Click Me</button></p>
+
+                    <div class="reveal" id="exampleModal" data-reveal >
+                        <h2>SCRANTON: THE ELECTRIC CITY</h2>
+                        <p>text text text text text text text text text text</p>
+                        <button class="close-button" data-close aria-label="Close modal" id="closeBtn" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
+
+
                 </div>
                 <div class="cell large-6">
                     <div class="card">
