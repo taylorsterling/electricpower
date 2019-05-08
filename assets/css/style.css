@@ -1,20 +1,31 @@
-body {
-    background-image: url("../media/aluminum.png");
+#epibanner {
+    width: 100vw;
 }
 
+#introsection {
+    background-color: rgb(233, 233, 83);
+}
 
+.card {
+    margin-top: 3%;
+    background-color: transparent;
+    text-align: center;
+    font-family: poppins;
+    border: none;
+}
 
 .callout, .large {
     background-color: transparent;
     border: none;
     margin-top: 3%;
-    margin-left: 3%;
-    margin-right: 3%;
+    padding: .5rem;
+    margin-right: 2%;
 }
 
 
 .intro {
     background: rgba(136, 136, 136, 0.3);
+  
 }
 
 h2 {
@@ -28,27 +39,29 @@ h2 {
     font-family: poppins;
 }
 
-#bolt {
-    width: 1rem;
+#wires {
+
+    width: 100%;
 }
 
 
+#infosection {
+    background-color: white;
+}
 
 
-
-
-
-
-
-
-
-
-
+#concludesection {
+    background-color: rgb(233, 233, 83);
+}
 
 
 .topbar-responsive {
     background: #2c3840;
-    padding: 1rem 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(233, 233, 83);
   }
   
   .topbar-responsive .topbar-responsive-logo {
