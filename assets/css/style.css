@@ -65,6 +65,10 @@ h3 {
     background: #2c3840;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #fd8953;
+    
 
   }
   
@@ -259,15 +263,15 @@ h3 {
     height: 100%;
 }
 .border:hover::before {
-    border-top-color: #F9BC7D;
-    border-right-color: #F9BC7D;
+    border-top-color: #fd8953;
+    border-right-color: #fd8953;
     -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
     transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
     animation-iteration-count: infinite;
 }
 .border:hover::after {
-    border-bottom-color: #F9BC7D;
-    border-left-color: #F9BC7D;
+    border-bottom-color: #fd8953;
+    border-left-color: #fd8953;
     -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
     transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
@@ -282,6 +286,10 @@ h3 {
     position: absolute;
     width: 100%;
     padding: 1rem;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #fd8953;
+      
 }
 
 #copyright {
