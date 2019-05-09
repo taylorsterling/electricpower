@@ -190,7 +190,10 @@ h3 {
   }
 
 
-
+#wires {
+    width: 75%;
+    align-self: center;
+}
 
 
 
