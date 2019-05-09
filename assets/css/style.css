@@ -7,11 +7,17 @@
 }
 
 .card {
-    margin-top: 3%;
+    margin-top: 5%;
     background-color: transparent;
     text-align: center;
     font-family: poppins;
     border: none;
+}
+
+.cardImg {
+
+    width: 75%;
+    align-self: center;
 }
 
 .callout, .large {
@@ -19,14 +25,8 @@
     border: none;
     margin-top: 3%;
     padding: .5rem;
-    margin-right: 2%;
 }
 
-
-.intro {
-    background: rgba(136, 136, 136, 0.3);
-  
-}
 
 h2 {
     font-family: raleway;
@@ -45,11 +45,6 @@ h3 {
     font-family: poppins;
 }
 
-#wires {
-
-    width: 100%;
-}
-
 
 #infosection {
     background-color: white;
@@ -60,14 +55,15 @@ h3 {
     background-color: rgb(238, 238, 145);
 }
 
+#svg {
+    width: 4rem;
+}
 
 .topbar-responsive {
     background: #2c3840;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: rgb(238, 238, 145);
+
   }
   
   .topbar-responsive .topbar-responsive-logo {
@@ -203,6 +199,92 @@ h3 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .animation {
+    border: 0;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 2px transparent;
+    color: black;
+    position: relative;
+    vertical-align: middle;
+}
+.animation::before, .animation::after {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.border {
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
+}
+.border::before, .border::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+}
+.border::before {
+    top: 0;
+    left: 0;
+}
+.border::after {
+    bottom: 0;
+    right: 0;
+}
+
+.border:hover::before, .border:hover::after {
+    width: 100%;
+    height: 100%;
+}
+.border:hover::before {
+    border-top-color: white;
+    border-right-color: white;
+    -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    animation-iteration-count: infinite;
+}
+.border:hover::after {
+    border-bottom-color: white;
+    border-left-color: white;
+    -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+
+.footer {
+    background-color: #2c3840;
+    text-align: center;
+    color: white;
+    font-family: poppins;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+}
+
+#copyright {
+    margin-top: 2%;
+}
 
 
 
