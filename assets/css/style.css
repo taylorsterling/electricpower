@@ -50,6 +50,7 @@ h3 {
 
 #infosection {
     background-color: white;
+    align-content: center;
 }
 
 
@@ -204,29 +205,6 @@ h3 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .animation {
     border: 0;
     box-sizing: border-box;
@@ -234,6 +212,9 @@ h3 {
     color: black;
     position: relative;
     vertical-align: middle;
+    align-self: center;
+    margin: 5rem;
+    padding: 5rem;
 }
 .animation::before, .animation::after {
     box-sizing: border-box;
@@ -270,13 +251,22 @@ h3 {
     border-right-color: #fd8953;
     -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
     transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-    animation-iteration-count: infinite;
 }
 .border:hover::after {
     border-bottom-color: #fd8953;
     border-left-color: #fd8953;
     -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
     transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+
+.cardModal {
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  color: white;
+  font-family: poppins;
+  padding: 3%;
 }
 
 

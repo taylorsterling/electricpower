@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EPI</title>
 
+    <!-- Tab Image -->
+    <link rel="icon" href="assets/media/icon.ico">
+
     <!-- Linking in JS and JQuery -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
@@ -26,6 +29,10 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Parisienne|Playfair+Display|Prata|Poppins|Permanent+Marker|Rochester|Raleway|Shadows+Into+Light"
         rel="stylesheet">
 
+    <!-- Insert this within your head tag and after foundation.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
+
+
     <!-- Linking in Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -42,7 +49,7 @@
                         <button class="menu-icon" type="button" data-toggle></button>
                     </span>
                     <a class="topbar-responsive-logo" href="#">
-                            <img id="svg" src="./assets/media/icon.svg">
+                        <img id="svg" src="./assets/media/icon.svg">
                     </a>
                 </div>
                 <div id="topbar-responsive" class="topbar-responsive-links">
@@ -68,86 +75,7 @@
 
 
     <section id="introsection">
-        <div class="grid-container">
-            <div class="grid-x">
-                <div class="cell large-4">
-                    <div class="card">
-                        <img alt="pole" class="cardImg" src="./assets/media/pole.JPG">
-                        <div class="card-section">
-                            <h3>Montreal, Quebec</h3>
-                            <p>Valar morghulis. Toli rhuqo lotinti, kostilus. Hen syndrorro, onos. Hen nuqir, perzys. Hen morghot, glaeson. Valor dohaeris. </p>
-                        </div>
-                    </div>
-                </div>
 
-
-                <div class="cell large-4">
-                    <div class="card">
-                        <img alt="station" class="cardImg" src="./assets/media/station.JPG">
-                        <div class="card-section">
-                            <h3>Cape Town, South Africa</h3>
-                            <p>Valar morghulis. Toli rhuqo lotinti, kostilus. Hen syndrorro, onos. Hen nuqir, perzys. Hen morghot, glaeson. Valor dohaeris.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="cell large-4">
-                    <div class="card">
-                        <img alt="poles" class="cardImg" src="./assets/media/poles.jpg">
-                        <div class="card-section">
-                            <h3>Romania</h3>
-                            <p> Valar morghulis. Toli rhuqo lotinti, kostilus. Hen syndrorro, onos. Hen nuqir, perzys. Hen morghot, glaeson. Valor dohaeris.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section id="infosection">
-        <div class="grid-container fluid">
-            <div class="grid-x">
-                <div class="cell large-6">
-
-                    <p><button id="modalTrigger" class="animation border" data-open="exampleModal">Click Me</button></p>
-
-                    <div class="reveal" id="exampleModal" data-reveal>
-                        <h2>SCRANTON: THE ELECTRIC CITY</h2>
-                        <p>text text text text text text text text text text</p>
-                        <button class="close-button" data-close aria-label="Close modal" id="closeBtn" type="button">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-
-
-                </div>
-                <div class="cell large-6 test">
-
-
-
-
-
-
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-
-
-
-
-
-
-
-
-    <section id="concludesection">
         <div class="grid-container fluid">
             <div class="grid-x">
                 <div class="cell large-6">
@@ -169,6 +97,107 @@
                         <div class="card-section">
                             <h3>The Netherlands</h3>
                             <p>Bolsward Substation</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="infosection">
+        <div class="grid-container fluid">
+            <div class="grid-x">
+                <div class="cell large-12">
+
+                    <p><button id="modalTrigger" class="animation border" data-open="exampleModal">Click Me</button></p>
+
+                    <div class="reveal" id="exampleModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+                        <h2>SCRANTON: THE ELECTRIC CITY</h2>
+                        <p>text text text text text text text text text text</p>
+                        <button class="close-button" data-close aria-label="Close modal" id="closeBtn" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section id="concludesection">
+        <div class="grid-container">
+            <div class="grid-x">
+                <div class="cell large-4">
+                    <div class="card">
+                        <img alt="pole" class="cardImg" src="./assets/media/pole.JPG">
+                        <div class="card-section">
+                            <h3>Montreal, Quebec</h3>
+                            <p>Valar morghulis. Toli rhuqo lotinti, kostilus. Hen syndrorro, onos. Hen nuqir, perzys.
+                                Hen morghot, glaeson. Valor dohaeris. </p>
+                        </div>
+                        <p><button class="cardModal" data-open="slideModal">Click Me</button></p>
+
+                        <div class="reveal" id="slideModal" data-reveal data-animation-in="slide-in-down"
+                            data-animation-out="slide-out-up">
+                            <h2>SCRANTON: THE ELECTRIC CITY</h2>
+                            <p>text text text text text text text text text text</p>
+                            <button class="close-button" data-close aria-label="Close modal" id="closeBtn" type="button">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cell large-4">
+                    <div class="card">
+                        <img alt="station" class="cardImg" src="./assets/media/station.JPG">
+                        <div class="card-section">
+                            <h3>Cape Town, South Africa</h3>
+                            <p>Valar morghulis. Toli rhuqo lotinti, kostilus. Hen syndrorro, onos. Hen nuqir, perzys.
+                                Hen morghot, glaeson. Valor dohaeris.</p>
+                        </div>
+                        <p><button class="cardModal" data-open="spinModal">Click Me</button></p>
+
+                        <div class="reveal" id="spinModal" data-reveal data-animation-in="spin-in" data-animation-out="spin-out">
+                            <h2>SCRANTON: THE ELECTRIC CITY</h2>
+                            <p>text text text text text text text text text text</p>
+                            <button class="close-button" data-close aria-label="Close modal" id="closeBtn" type="button">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cell large-4">
+                    <div class="card">
+                        <img alt="poles" class="cardImg" src="./assets/media/poles.jpg">
+                        <div class="card-section">
+                            <h3>Romania</h3>
+                            <p> Valar morghulis. Toli rhuqo lotinti, kostilus. Hen syndrorro, onos. Hen nuqir, perzys.
+                                Hen morghot, glaeson. Valor dohaeris.</p>
+                        </div>
+                        <p><button class="cardModal" data-open="hingeModal">Click Me</button></p>
+
+                        <div class="reveal" id="hingeModal" data-reveal data-animation-in="hinge-in-from-middle-x"
+                            data-animation-out="hinge-out-from-middle-y">
+                            <h2>SCRANTON: THE ELECTRIC CITY</h2>
+                            <p>text text text text text text text text text text</p>
+                            <button class="close-button" data-close aria-label="Close modal" id="closeBtn" type="button">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                     </div>
 
