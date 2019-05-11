@@ -26,8 +26,7 @@
     <script src="./assets/javascript/index.js"></script>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Parisienne|Playfair+Display|Prata|Poppins|Permanent+Marker|Rochester|Raleway|Shadows+Into+Light"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Shadows+Into+Light" rel="stylesheet">
 
     <!-- Insert this within your head tag and after foundation.css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
@@ -56,9 +55,9 @@
                     <div class="top-bar-right">
                         <ul class="menu simple vertical medium-horizontal">
                             <li><a class="hide" href="#">Test</a></li>
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
+                            <li><a id="toIntro" href="#introsection">Link 1</a></li>
+                            <li><a id="toToggle" href="#togglesection">Link 2</a></li>
+                            <li><a id="toConclude" href="#concludesection">Link 3</a></li>
                         </ul>
                     </div>
                 </div>
@@ -81,7 +80,7 @@
             <div class="grid-x">
                 <div class="cell large-6">
                     <div class="callout large intro">
-                        <h2>Electric Power Industry</h2>
+                        <h2>Introduction</h2><br>
                         <p id="introtext">The electric power industry covers the generation, transmission, distribution
                             and sale of electric power to the general public and industry. The commercial distribution
                             of electric power started in 1882 when electricity was produced for electric lighting. In
@@ -111,18 +110,17 @@
         <div class="grid-container fluid">
             <div class="grid-x">
                 <div class="cell large-12">
-                    <h4>See What Electricity Can Do!</h4>
-                    <!-- <p><button id="toggle" class="animation border" data-open="powerModal">Click Me To Toggle The
-                            Power!</button></p> -->
-
-                    <div class="switch large">
-                        <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
-                        <label class="switch-paddle" for="largeSwitch">
-                            <span class="switch-active" aria-hidden="true">ON</span>
-                            <span class="switch-inactive" aria-hidden="true">OFF</span>
-                        </label>
-                    </div>
-
+                    
+                        <h4>See What Electricity Can Do!</h4>
+                        <br>
+                        <div class="switch large">
+                            <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
+                            <label class="switch-paddle" for="largeSwitch">
+                                <span class="switch-active" aria-hidden="true">ON</span>
+                                <span class="switch-inactive" aria-hidden="true">OFF</span>
+                            </label>
+                        </div>
+                   
                 </div>
             </div>
         </div>
@@ -146,7 +144,7 @@
                         <div class="reveal" id="slideModal" data-reveal data-animation-in="slide-in-down"
                             data-animation-out="slide-out-up">
                             <h2>Example Modal 1</h2>
-                            <img src="./assets/media/placeholder1.png" alt="pole" class="modalImg">
+                            <img src="./assets/media/placeholder1.png" alt="placeholder" class="modalImg">
                             <button class="close-button" data-close aria-label="Close modal" id="closeBtn" type="button">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -167,7 +165,7 @@
 
                         <div class="reveal" id="spinModal" data-reveal data-animation-in="spin-in" data-animation-out="spin-out">
                             <h2>Example Modal 2</h2>
-                            <img src="./assets/media/placeholder2.png" alt="pole" class="modalImg">
+                            <img src="./assets/media/placeholder2.png" alt="placeholder" class="modalImg">
                             <button class="close-button" data-close aria-label="Close modal" id="closeBtn" type="button">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -189,7 +187,7 @@
                         <div class="reveal" id="hingeModal" data-reveal data-animation-in="hinge-in-from-middle-x"
                             data-animation-out="hinge-out-from-middle-y">
                             <h2>Example Modal 3</h2>
-                            <img src="./assets/media/placeholder3.png" alt="pole" class="modalImg">
+                            <img src="./assets/media/placeholder3.PNG" alt="placeholder" class="modalImg">
                             <button class="close-button" data-close aria-label="Close modal" id="closeBtn" type="button">
                                 <span aria-hidden="true">&times;</span>
                             </button>

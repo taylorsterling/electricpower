@@ -39,5 +39,31 @@ $(document).ready(function () {
     });
 
 
+    // For smooth scrolling from links
+    $("#toIntro").on('click', function (event) {
+
+        $('html, body').animate({
+            scrollTop: $("#introsection").offset().top
+        }, 'slow');
+
+    });
+
+    $("#toToggle").on('click', function (event) {
+
+        $('html, body').animate({
+            scrollTop: $("#togglesection").offset().top
+        }, 'slow');
+
+    });
+
+    $("#toConclude").on('click', function (event) {
+
+        $('html, body').animate({
+            scrollTop: $("#concludesection").offset().top
+        }, 'slow');
+
+    });
+
+
 });
 
