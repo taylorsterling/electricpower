@@ -55,6 +55,7 @@
                 <div id="topbar-responsive" class="topbar-responsive-links">
                     <div class="top-bar-right">
                         <ul class="menu simple vertical medium-horizontal">
+                            <li><a class="hide" href="#">Test</a></li>
                             <li><a href="#">Link 1</a></li>
                             <li><a href="#">Link 2</a></li>
                             <li><a href="#">Link 3</a></li>
@@ -106,32 +107,26 @@
     </section>
 
 
-
-
-    <section id="infosection">
+    <section id="togglesection">
         <div class="grid-container fluid">
             <div class="grid-x">
                 <div class="cell large-12">
+                    <h4>See What Electricity Can Do!</h4>
+                    <!-- <p><button id="toggle" class="animation border" data-open="powerModal">Click Me To Toggle The
+                            Power!</button></p> -->
 
-                    <p><button id="modalTrigger" class="animation border" data-open="exampleModal">Click Me</button></p>
-
-                    <div class="reveal" id="exampleModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-                        <h2>SCRANTON: THE ELECTRIC CITY</h2>
-                        <p>text text text text text text text text text text</p>
-                        <button class="close-button" data-close aria-label="Close modal" id="closeBtn" type="button">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                    <div class="switch large">
+                        <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
+                        <label class="switch-paddle" for="largeSwitch">
+                            <span class="switch-active" aria-hidden="true">ON</span>
+                            <span class="switch-inactive" aria-hidden="true">OFF</span>
+                        </label>
                     </div>
 
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
 
 
 
@@ -150,8 +145,8 @@
 
                         <div class="reveal" id="slideModal" data-reveal data-animation-in="slide-in-down"
                             data-animation-out="slide-out-up">
-                            <h2>SCRANTON: THE ELECTRIC CITY</h2>
-                            <p>text text text text text text text text text text</p>
+                            <h2>Example Modal 1</h2>
+                            <img src="./assets/media/placeholder1.png" alt="pole" class="modalImg">
                             <button class="close-button" data-close aria-label="Close modal" id="closeBtn" type="button">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -171,8 +166,8 @@
                         <p><button class="cardModal" data-open="spinModal">Click Me</button></p>
 
                         <div class="reveal" id="spinModal" data-reveal data-animation-in="spin-in" data-animation-out="spin-out">
-                            <h2>SCRANTON: THE ELECTRIC CITY</h2>
-                            <p>text text text text text text text text text text</p>
+                            <h2>Example Modal 2</h2>
+                            <img src="./assets/media/placeholder2.png" alt="pole" class="modalImg">
                             <button class="close-button" data-close aria-label="Close modal" id="closeBtn" type="button">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -193,8 +188,8 @@
 
                         <div class="reveal" id="hingeModal" data-reveal data-animation-in="hinge-in-from-middle-x"
                             data-animation-out="hinge-out-from-middle-y">
-                            <h2>SCRANTON: THE ELECTRIC CITY</h2>
-                            <p>text text text text text text text text text text</p>
+                            <h2>Example Modal 3</h2>
+                            <img src="./assets/media/placeholder3.png" alt="pole" class="modalImg">
                             <button class="close-button" data-close aria-label="Close modal" id="closeBtn" type="button">
                                 <span aria-hidden="true">&times;</span>
                             </button>

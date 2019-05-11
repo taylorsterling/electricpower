@@ -4,6 +4,8 @@
 
 #introsection {
     background-color: #585d60;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .card {
@@ -42,24 +44,38 @@ h3 {
     font-weight: 400;
 }
 
+h4 {
+  font-family: raleway;
+    font-weight: 500;
+}
+
 #introtext {
     text-align: left;
     font-family: poppins;
 }
 
 
-#infosection {
-    background-color: white;
+#togglesection {
+    background-color: #f0f0f0;
     align-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
+
 
 
 #concludesection {
     background-color: #585d60;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 #svg {
     width: 4rem;
+}
+
+.hide {
+  display: none;
 }
 
 .topbar-responsive {
@@ -202,9 +218,6 @@ h3 {
     align-self: center;
 }
 
-
-
-
   .animation {
     border: 0;
     box-sizing: border-box;
@@ -214,7 +227,7 @@ h3 {
     vertical-align: middle;
     align-self: center;
     margin: 5rem;
-    padding: 5rem;
+
 }
 .animation::before, .animation::after {
     box-sizing: border-box;
@@ -259,6 +272,30 @@ h3 {
     transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 
+.reveal {
+  text-align: center;
+}
+
+.toggleDiv {
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.switch {
+  display: block;
+  align-self: center;
+  margin: 5rem;
+
+}
+
+input:checked~.switch-paddle {
+  background: #fd8953;
+}
 
 .cardModal {
   border-style: solid;
@@ -267,6 +304,10 @@ h3 {
   color: white;
   font-family: poppins;
   padding: 3%;
+}
+
+.modalImg {
+  width: 91%;
 }
 
 
