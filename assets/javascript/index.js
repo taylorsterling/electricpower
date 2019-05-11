@@ -18,6 +18,9 @@ $(document).ready(function () {
             $(".cardModal").css("border-color", "white");
             $("#concludesection").css("background-color", "#585d60");
             $("#footer").css("background-color", "#2c3840");
+            $(".cardImg").removeClass("glowEffect");
+            $(".switch").removeClass("glowEffect");
+            $("#wires").removeClass("glowEffect");
 
        
         }else {
@@ -34,6 +37,9 @@ $(document).ready(function () {
             $(".cardModal").css("border-color", "black");
             $("#concludesection").css("background-color", "#f0f0f0");
             $("#footer").css("background-color", "#585d60");
+            $(".cardImg").addClass("glowEffect");
+            $(".switch").addClass("glowEffect");
+            $("#wires").addClass("glowEffect");
 
         }
     });

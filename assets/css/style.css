@@ -5,11 +5,10 @@
 #introsection {
     background-color: #585d60;
     padding-top: 1%;
-    padding-bottom: 1%;
+  
 }
 
 .card {
-    margin-top: 7%;
     background-color: transparent;
     text-align: center;
     font-family: poppins;
@@ -21,13 +20,18 @@
 
     width: 75%;
     align-self: center;
+    margin-top: 10%;
 }
 
-.callout, .large {
+.callout {
     background-color: transparent;
     border: none;
-    margin-top: 3%;
     color: white;
+    margin-top: 2%;
+}
+
+.large-12 {
+  text-align: center
 }
 
 
@@ -44,8 +48,10 @@ h3 {
 }
 
 h4 {
-  font-family: raleway;
+    font-family: raleway;
     font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
 }
 
 #introtext {
@@ -215,6 +221,7 @@ h4 {
 #wires {
     width: 75%;
     align-self: center;
+    margin-top: 7%;
 }
 
 
@@ -222,22 +229,16 @@ h4 {
   text-align: center;
 }
 
-#toggleWrapper {
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 
 .switch {
-  display: block;
+  display: inline-block;
   align-self: center;
   margin: 5rem;
-  animation: glow 4s infinite;
   width: 5rem;
+}
+
+.glowEffect {
+  animation: glow 3.5s infinite;
 }
 
 
