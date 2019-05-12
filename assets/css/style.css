@@ -5,8 +5,9 @@
 #introsection {
     background-color: #585d60;
     padding-top: 1%;
-  
+
 }
+  
 
 .card {
     background-color: transparent;
@@ -238,14 +239,14 @@ h4 {
 }
 
 .glowEffect {
-  animation: glow 3.5s infinite;
+  animation: glow 3s infinite;
 }
 
 
 @keyframes glow {
-  0% { background-color: #fd8953; box-shadow: 0 0 5px #fd8953; }
-  50% { background-color: #fd8953; box-shadow: 0 0 44px #fd8953; }
-  100% { background-color: #fd8953; box-shadow: 0 0 5px #fd8953; }
+  0% { background-color: rgb(180, 153, 3); box-shadow: 0 0 5px rgb(180, 153, 3); }
+  50% { background-color: rgb(180, 153, 3); box-shadow: 0 0 44px rgb(180, 153, 3); }
+  100% { background-color: rgb(180, 153, 3); box-shadow: 0 0 5px rgb(180, 153, 3); }
 }
 
 input:checked~.switch-paddle {
